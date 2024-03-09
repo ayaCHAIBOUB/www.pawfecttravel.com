@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawfect Travels</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('oip.png');
+      background-color: #FAD02E; 
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+      background-image: url('oip.png');
+      background-color: #5C6BC0; 
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 4em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      animation: fadeInOut 4s linear infinite;
+      color: #9cb29c;
+    }
+
+    p.tagline {
+      font-size: 1.5em;
+      color: #000000;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    nav {
+      background-color: #5C6BC0; 
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #3949AB; 
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1, h2, h3 {
+      color: #5C6BC0;
+      text-decoration: underline;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #5C6BC0; 
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #3949AB; 
+    }
+
+    .scroll-content {
+      display: block;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .scroll-content h3 {
+      color: #4CAF50;
+    }
+
+    .scroll-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #5C6BC0; 
+      text-decoration: none;
+      border: 2px solid #5C6BC0;
+      border-radius: 5px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .scroll-button:hover {
+      background-color: #5C6BC0; 
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5C6BC0; 
+      color: #fff;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #5C6BC0; 
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #5C6BC0; 
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3949AB; 
+    }
+
+    .extended-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .extended-section img {
+      flex: 1;
+      max-width: 45%;
+      margin-right: 20px;
+    }
+
+    .extended-section h2,
+    .extended-section p {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .community-section {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .comment {
+      flex-basis: calc(50% - 10px);
+      margin-bottom: 20px;
+    }
+
+    .comment-content {
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .comment-username {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pawfect Travels</h1>
+    <p class="tagline">Exploring the World with Your Furry Friends</p>
+  </header>
+  <audio autoplay>
+    <source src="sumu - apart [NCS Release].mp3" type="audio/mp3">
+  </audio>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#accommodations">Accommodations</a>
+    <a href="#tips">Travel Tips</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Pawfect Travels!</h2>
+    <p>Embark on unforgettable journeys with your pets. Discover pet-friendly destinations, accommodation, and travel tips.</p>
+    <img src="R (2).jpeg" alt="Pet-friendly Beach">
+    <p>Are you tired of leaving your furry friends behind when you travel? At Pawfect Travels, we believe that every journey should include your pets. Whether you have a dog, cat, or any other travel-loving companion, we've got you covered.</p>
+    <img src="R (3).jpeg" alt="Pet-friendly Accommodation">
+    <p>Discover the joy of traveling with your pets and create pawsome memories together!</p>
+    <a href="#destinations" class="button">Explore Destinations</a>
+  </section>
+
+  <section id="destinations">
+    <h2>Discover Pet-Friendly Destinations</h2>
+    <div class="scroll-content">
+      <h3 id="destination1">Destination 1: Coastal Retreat</h3>
+      <p>Enjoy a coastal escape with your furry friend. Miles of pet-friendly beaches and breathtaking views await you!</p>
+    </div>
+    <img src="R (5).jpeg" alt="Pet-friendly Accommodation">
+  </section>
+
+  <section id="accommodations">
+    <h2>Cozy Pet-Friendly Accommodations</h2>
+    <div class="extended-section">
+      <div class="scroll-content">
+        <h3 id="accommodation1">Accommodation 1: Pet Paradise Inn</h3>
+        <p>Stay in comfort at Pet Paradise Inn, where your pet is treated like royalty. Cozy beds and personalized amenities for your furry friend.</p>
+      </div>
+      <div class="scroll-content">
+        <h3 id="accommodation2">Accommodation 2: Mountain Cabin Haven</h3>
+        <p>Experience the tranquility of the mountains with your pet. Our cabin offers a peaceful retreat for you and your furry companion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <h2>Travel Tips for Pet Owners</h2>
+    <p>Traveling with pets requires extra planning and consideration. Here are some tips to make your journey enjoyable for both you and your furry friend:</p>
+    <ul>
+      <li>Research pet-friendly destinations and accommodations in advance.</li>
+      <li>Pack essentials for your pet, including food, water, toys, and medical records.</li>
+      <li>Ensure your pet is comfortable in a travel carrier or crate.</li>
+      <li>Take frequent breaks during long journeys for your pet to stretch and relieve themselves.</li>
+      <li>Check local pet regulations and leash laws at your destination.</li>
+      <li>Visit a veterinarian before travel for health check-ups and vaccinations.</li>
+      <li>Bring familiar items, like your pet's bed or favorite blanket, to create a sense of home.</li>
+      <li>Be patient and understanding, as travel can be stressful for pets.</li>
+    </ul>
+    <p>With these tips, you can have a smooth and enjoyable travel experience with your furry companion!</p>
+    <a href="#home" class="scroll-button">Back to Top</a>
+  </section>
+
+  <section id="about">
+    <div class="about-section">
+        <h2>About Pawfect Travels</h2>
+        <p>Welcome to Pawfect Travels, your ultimate companion in exploring the world with your furry friends. We understand that your pets are more than just companions; they are family. That's why we've curated a travel experience that includes every member of your pack.</p>
+        
+        <p>At Pawfect Travels, we believe that adventure knows no bounds, and that includes your pets. Our mission is to provide you with the resources and inspiration to embark on unforgettable journeys with your four-legged companions. Whether you have a dog, cat, or any other travel-loving pet, we're here to make your travel experiences truly pawfect.</p>
+        
+        <p>Discover pet-friendly destinations, cozy accommodations, and valuable travel tips that cater to the unique needs of pet owners. We're passionate about creating a community of pet-loving explorers who share their adventures and tips for a life well-traveled with pets.</p>
+        
+        <p>Join us on this exciting journey where every destination becomes a playground for both you and your pets. Pawfect Travels is not just a travel blog; it's a celebration of the joy and bond shared between pets and their owners during their travels.</p>
+        
+        <p>Embark on the adventure of a lifetime with Pawfect Travels. Because every journey is better with your furry friends by your side!</p>
+        <img src="OIP (2).jpeg" alt="Pet-friendly Accommodation">
+    </div>
+  </section>
+
+  <section id="community" class="community-section">
+    <h2>Travel Stories from Our Community</h2>
+    <div class="comment">
+      <img src="OIP (4).jpeg" alt="Profile Pic" class="profile-pic">
+      <div class="comment-content">
+        <p class="comment-username">Ethan Reynolds</p>
+        <p>Thanks to Pawfect Travels, my pet and I had an amazing adventure together! The pet-friendly accommodations were top-notch.</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="R (8).jpeg" alt="Profile Pic" class="profile-pic">
+      <div class="comment-content">
+        <p class="comment-username">Olivia Mitchell</p>
+        <p>Exploring destinations with my furry friend has never been this easy. Pawfect Travels provided valuable tips for a hassle-free journey!</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="OIP (3).jpeg" alt="Profile Pic" class="profile-pic">
+      <div class="comment-content">
+        <p class="comment-username">Rayan</p>
+        <p>Grateful for the pet-friendly accommodations recommended by Pawfect Travels. Our stay was comfortable, and the staff was welcoming.</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="R (7).jpeg" alt="Profile Pic" class="profile-pic">
+      <div class="comment-content">
+        <p class="comment-username">Amily Brooks</p>
+        <p>Thanks for the travel tips! They made our journey stress-free, and my pet enjoyed every moment of the trip.</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="téléchargement (3).jpeg" alt="Profile Pic" class="profile-pic">
+      <div class="comment-content">
+        <p class="comment-username">Sam Smith</p>
+        <p>Our travel experience with Pawfect Travels was unforgettable. The pet-friendly destinations exceeded our expectations!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:ayachaiboub01@gmail.com" method="post" enctype="text/plain">
+      <form action="contact.php" method="post" enctype="text/plain" id="contact-form">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+       <input type="submit" value="submit">
+      </form>
+    </form>
+    <a href="#home" class="scroll-button">Back to Top</a>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     
+      var contactForm = document.getElementById('contact-form');
+  
+     
+      contactForm.addEventListener('submit', function (event) {
+       
+        event.preventDefault();
+  
+        
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'contact.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+         
+            if (xhr.responseText === 'success') {
+              alert('Form submitted successfully!');
+            } else {
+              alert('Error submitting form. Please try again.');
+            }
+          }
+        };
+        xhr.send(new FormData(contactForm));
+      });
+    });
+  </script>
+  
+  <footer>
+    &copy; 2024 Pawfect Travels. All rights reserved.
+  </footer>
+
+</body>
+</html>
